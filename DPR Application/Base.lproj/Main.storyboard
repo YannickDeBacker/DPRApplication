@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Data logging -->
         <scene sceneID="MT1-bC-0pc">
             <objects>
-                <viewController id="5F2-ff-SHm" sceneMemberID="viewController">
+                <viewController title="Data logging " id="5F2-ff-SHm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JTm-6h-V6f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,38 +94,63 @@
             </objects>
             <point key="canvasLocation" x="-58" y="861"/>
         </scene>
-        <!--View Controller-->
+        <!--Import/export Activities-->
+        <scene sceneID="k8d-HC-qzz">
+            <objects>
+                <viewController title="Import/export Activities" id="0Ee-ww-V88" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="deI-ft-kLb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z17-2x-1Sq">
+                                <rect key="frame" x="30" y="427" width="354" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Import CSV"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cem-hj-a8E"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z17-2x-1Sq" firstAttribute="leading" secondItem="cem-hj-a8E" secondAttribute="leading" constant="30" id="7dM-fw-am6"/>
+                            <constraint firstItem="Z17-2x-1Sq" firstAttribute="centerY" secondItem="deI-ft-kLb" secondAttribute="centerY" id="klH-Oo-ftS"/>
+                            <constraint firstItem="cem-hj-a8E" firstAttribute="trailing" secondItem="Z17-2x-1Sq" secondAttribute="trailing" constant="30" id="mwg-9S-pRe"/>
+                            <constraint firstItem="Z17-2x-1Sq" firstAttribute="centerX" secondItem="deI-ft-kLb" secondAttribute="centerX" id="yps-UN-1Xu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ufa-dL-zZW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1052.1739130434783" y="859.82142857142856"/>
+        </scene>
+        <!--Main page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DPR_Application" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main page" id="BYZ-38-t0r" customClass="ViewController" customModule="DPR_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivs-rY-VCU">
-                                <rect key="frame" x="137" y="197" width="145" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivs-rY-VCU">
+                                <rect key="frame" x="135" y="197" width="144" height="180"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Data Logging">
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sC9-1a-lPE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sC9-1a-lPE">
                                 <rect key="frame" x="154" y="529" width="106" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Reporting">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQd-eX-Ify">
-                                <rect key="frame" x="170" y="686" width="75" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQd-eX-Ify">
+                                <rect key="frame" x="169.5" y="611" width="75" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Set-up"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ProjectName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvD-Ln-JUr">
-                                <rect key="frame" x="163" y="64" width="100" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ProjectName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvD-Ln-JUr">
+                                <rect key="frame" x="157.5" y="64" width="99" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -135,13 +160,34 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Performance"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10E-y6-Yf8">
+                                <rect key="frame" x="30" y="744" width="354" height="88"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Export CSV"/>
+                                <connections>
+                                    <action selector="ImportCSV:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBC-cz-PCf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="PvD-Ln-JUr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Nb-lD-ff3"/>
+                            <constraint firstItem="Ivs-rY-VCU" firstAttribute="top" secondItem="PvD-Ln-JUr" secondAttribute="bottom" constant="112" id="5at-Rp-zGl"/>
+                            <constraint firstItem="PvD-Ln-JUr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="6Zz-fm-SmQ"/>
+                            <constraint firstItem="10E-y6-Yf8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="700" id="AAm-Yz-rYo"/>
                             <constraint firstItem="sC9-1a-lPE" firstAttribute="top" secondItem="VtK-UJ-xuk" secondAttribute="bottom" constant="60" id="Cjd-iY-tjg"/>
+                            <constraint firstItem="VtK-UJ-xuk" firstAttribute="top" secondItem="Ivs-rY-VCU" secondAttribute="bottom" constant="50" id="MCq-8g-nxh"/>
                             <constraint firstItem="VtK-UJ-xuk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PRg-0T-yEY"/>
+                            <constraint firstItem="Ivs-rY-VCU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ptg-Dj-cBm"/>
+                            <constraint firstItem="10E-y6-Yf8" firstAttribute="top" secondItem="eQd-eX-Ify" secondAttribute="bottom" constant="91" id="R9I-7C-f8p"/>
+                            <constraint firstItem="sC9-1a-lPE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UFa-MW-VEZ"/>
+                            <constraint firstItem="eQd-eX-Ify" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wha-GJ-rZR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="10E-y6-Yf8" secondAttribute="bottom" constant="30" id="eiz-Uv-ZMP"/>
+                            <constraint firstItem="10E-y6-Yf8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="hhC-sL-lMo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="10E-y6-Yf8" secondAttribute="trailing" constant="30" id="mOD-tJ-Ers"/>
                             <constraint firstItem="VtK-UJ-xuk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o2L-gE-8Za"/>
+                            <constraint firstItem="VtK-UJ-xuk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pfg-Iv-i5a"/>
                         </constraints>
                     </view>
                 </viewController>

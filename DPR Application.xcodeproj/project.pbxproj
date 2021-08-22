@@ -13,6 +13,7 @@
 		7D0725DB26D240310055C32D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D0725D926D240310055C32D /* Main.storyboard */; };
 		7D0725DD26D240390055C32D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0725DC26D240390055C32D /* Assets.xcassets */; };
 		7D0725E026D240390055C32D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D0725DE26D240390055C32D /* LaunchScreen.storyboard */; };
+		DF71D7D726D29D2300F49DA1 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DF71D7D626D29D2300F49DA1 /* CHCSVParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		7D0725DC26D240390055C32D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D0725DF26D240390055C32D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D0725E126D240390055C32D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF71D7D426D29D2200F49DA1 /* DPR Application-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DPR Application-Bridging-Header.h"; sourceTree = "<group>"; };
+		DF71D7D526D29D2300F49DA1 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHCSVParser.h; path = "../../Downloads/CHCSVParser-master/CHCSVParser/CHCSVParser/CHCSVParser.h"; sourceTree = "<group>"; };
+		DF71D7D626D29D2300F49DA1 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHCSVParser.m; path = "../../Downloads/CHCSVParser-master/CHCSVParser/CHCSVParser/CHCSVParser.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,8 +44,11 @@
 		7D0725C726D240310055C32D = {
 			isa = PBXGroup;
 			children = (
+				DF71D7D526D29D2300F49DA1 /* CHCSVParser.h */,
+				DF71D7D626D29D2300F49DA1 /* CHCSVParser.m */,
 				7D0725D226D240310055C32D /* DPR Application */,
 				7D0725D126D240310055C32D /* Products */,
+				DF71D7D426D29D2200F49DA1 /* DPR Application-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +106,7 @@
 				TargetAttributes = {
 					7D0725CF26D240310055C32D = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -138,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF71D7D726D29D2300F49DA1 /* CHCSVParser.m in Sources */,
 				7D0725D826D240310055C32D /* ViewController.swift in Sources */,
 				7D0725D426D240310055C32D /* AppDelegate.swift in Sources */,
 				7D0725D626D240310055C32D /* SceneDelegate.swift in Sources */,
@@ -286,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "DPR Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -294,6 +304,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lesdeuxpaks.DPR-Application";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DPR Application-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "DPR Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lesdeuxpaks.DPR-Application";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DPR Application-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
