@@ -12,7 +12,7 @@
         <!--Data logging -->
         <scene sceneID="MT1-bC-0pc">
             <objects>
-                <viewController title="Data logging " id="5F2-ff-SHm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="datalogging" title="Data logging " id="5F2-ff-SHm" customClass="DataloggingViewController" customModule="DPR_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JTm-6h-V6f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,35 +92,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AeI-PR-DH6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-58" y="861"/>
+            <point key="canvasLocation" x="-1899" y="185"/>
         </scene>
-        <!--Import/export Activities-->
+        <!--Reporting View Controller-->
         <scene sceneID="k8d-HC-qzz">
             <objects>
-                <viewController title="Import/export Activities" id="0Ee-ww-V88" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ufa-dL-zZW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="reporting" id="0Ee-ww-V88" customClass="ReportingViewController" customModule="DPR_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="deI-ft-kLb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z17-2x-1Sq">
-                                <rect key="frame" x="30" y="427" width="354" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Import CSV"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpD-wk-Y5F">
+                                <rect key="frame" x="184" y="388" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="ExportCSV:" destination="0Ee-ww-V88" eventType="touchUpInside" id="F3a-up-qjq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cem-hj-a8E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Z17-2x-1Sq" firstAttribute="leading" secondItem="cem-hj-a8E" secondAttribute="leading" constant="30" id="7dM-fw-am6"/>
-                            <constraint firstItem="Z17-2x-1Sq" firstAttribute="centerY" secondItem="deI-ft-kLb" secondAttribute="centerY" id="klH-Oo-ftS"/>
-                            <constraint firstItem="cem-hj-a8E" firstAttribute="trailing" secondItem="Z17-2x-1Sq" secondAttribute="trailing" constant="30" id="mwg-9S-pRe"/>
-                            <constraint firstItem="Z17-2x-1Sq" firstAttribute="centerX" secondItem="deI-ft-kLb" secondAttribute="centerX" id="yps-UN-1Xu"/>
-                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ufa-dL-zZW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1052.1739130434783" y="859.82142857142856"/>
+            <point key="canvasLocation" x="-257" y="185"/>
         </scene>
         <!--Main page-->
         <scene sceneID="tne-QT-ifu">
@@ -136,6 +133,9 @@
                                 <state key="normal" title="Data Logging">
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapDataloggingButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="mxd-H1-70H"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sC9-1a-lPE">
                                 <rect key="frame" x="154" y="529" width="106" height="42"/>
@@ -143,11 +143,17 @@
                                 <state key="normal" title="Reporting">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapReportingButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="jV2-yj-21H"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQd-eX-Ify">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQd-eX-Ify">
                                 <rect key="frame" x="169.5" y="611" width="75" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Set-up"/>
+                                <connections>
+                                    <action selector="tapImportListButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="XLz-03-5fl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ProjectName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvD-Ln-JUr">
                                 <rect key="frame" x="157.5" y="64" width="99" height="21"/>
@@ -159,13 +165,8 @@
                                 <rect key="frame" x="138.5" y="427" width="137" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Performance"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10E-y6-Yf8">
-                                <rect key="frame" x="30" y="744" width="354" height="88"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Export CSV"/>
                                 <connections>
-                                    <action selector="ImportCSV:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBC-cz-PCf"/>
+                                    <action selector="tapPerformanceButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZCF-tq-ZJT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -175,17 +176,12 @@
                             <constraint firstItem="PvD-Ln-JUr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Nb-lD-ff3"/>
                             <constraint firstItem="Ivs-rY-VCU" firstAttribute="top" secondItem="PvD-Ln-JUr" secondAttribute="bottom" constant="112" id="5at-Rp-zGl"/>
                             <constraint firstItem="PvD-Ln-JUr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="6Zz-fm-SmQ"/>
-                            <constraint firstItem="10E-y6-Yf8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="700" id="AAm-Yz-rYo"/>
                             <constraint firstItem="sC9-1a-lPE" firstAttribute="top" secondItem="VtK-UJ-xuk" secondAttribute="bottom" constant="60" id="Cjd-iY-tjg"/>
                             <constraint firstItem="VtK-UJ-xuk" firstAttribute="top" secondItem="Ivs-rY-VCU" secondAttribute="bottom" constant="50" id="MCq-8g-nxh"/>
                             <constraint firstItem="VtK-UJ-xuk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PRg-0T-yEY"/>
                             <constraint firstItem="Ivs-rY-VCU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ptg-Dj-cBm"/>
-                            <constraint firstItem="10E-y6-Yf8" firstAttribute="top" secondItem="eQd-eX-Ify" secondAttribute="bottom" constant="91" id="R9I-7C-f8p"/>
                             <constraint firstItem="sC9-1a-lPE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UFa-MW-VEZ"/>
-                            <constraint firstItem="eQd-eX-Ify" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wha-GJ-rZR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="10E-y6-Yf8" secondAttribute="bottom" constant="30" id="eiz-Uv-ZMP"/>
-                            <constraint firstItem="10E-y6-Yf8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="hhC-sL-lMo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="10E-y6-Yf8" secondAttribute="trailing" constant="30" id="mOD-tJ-Ers"/>
+                            <constraint firstItem="eQd-eX-Ify" firstAttribute="top" secondItem="sC9-1a-lPE" secondAttribute="bottom" constant="40" id="YEc-6J-SOu"/>
                             <constraint firstItem="VtK-UJ-xuk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o2L-gE-8Za"/>
                             <constraint firstItem="VtK-UJ-xuk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pfg-Iv-i5a"/>
                         </constraints>
@@ -193,7 +189,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57" y="108"/>
+            <point key="canvasLocation" x="-1052" y="-517"/>
+        </scene>
+        <!--Import List View Controller-->
+        <scene sceneID="PEv-kI-UTV">
+            <objects>
+                <viewController storyboardIdentifier="importlist" id="qwg-lO-HGd" customClass="ImportListViewController" customModule="DPR_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rQn-vN-hgi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGP-ru-RZM">
+                                <rect key="frame" x="133" y="424" width="149" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Import CSV"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ddy-UE-TRY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5WJ-37-wGa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="617" y="185"/>
+        </scene>
+        <!--Performance View Controller-->
+        <scene sceneID="qFX-fI-XdR">
+            <objects>
+                <viewController storyboardIdentifier="performance" id="moO-FX-Ml3" customClass="PerformanceViewController" customModule="DPR_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WWs-d6-nPg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Performance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ey4-S9-0Nr">
+                                <rect key="frame" x="125" y="430" width="164" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cq7-MM-YlU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPW-76-jQM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1052.1739130434783" y="184.82142857142856"/>
         </scene>
     </scenes>
     <resources>

@@ -14,6 +14,10 @@
 		7D0725DD26D240390055C32D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0725DC26D240390055C32D /* Assets.xcassets */; };
 		7D0725E026D240390055C32D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D0725DE26D240390055C32D /* LaunchScreen.storyboard */; };
 		DF71D7D726D29D2300F49DA1 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DF71D7D626D29D2300F49DA1 /* CHCSVParser.m */; };
+		DF71D7D926D5123300F49DA1 /* ReportingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF71D7D826D5123300F49DA1 /* ReportingViewController.swift */; };
+		DF71D7DB26D5124900F49DA1 /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF71D7DA26D5124900F49DA1 /* PerformanceViewController.swift */; };
+		DF71D7DD26D5126300F49DA1 /* DataloggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF71D7DC26D5126300F49DA1 /* DataloggingViewController.swift */; };
+		DF71D7DF26D5136700F49DA1 /* ImportListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF71D7DE26D5136700F49DA1 /* ImportListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		DF71D7D426D29D2200F49DA1 /* DPR Application-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DPR Application-Bridging-Header.h"; sourceTree = "<group>"; };
 		DF71D7D526D29D2300F49DA1 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHCSVParser.h; path = "../../Downloads/CHCSVParser-master/CHCSVParser/CHCSVParser/CHCSVParser.h"; sourceTree = "<group>"; };
 		DF71D7D626D29D2300F49DA1 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHCSVParser.m; path = "../../Downloads/CHCSVParser-master/CHCSVParser/CHCSVParser/CHCSVParser.m"; sourceTree = "<group>"; };
+		DF71D7D826D5123300F49DA1 /* ReportingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportingViewController.swift; sourceTree = "<group>"; };
+		DF71D7DA26D5124900F49DA1 /* PerformanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
+		DF71D7DC26D5126300F49DA1 /* DataloggingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataloggingViewController.swift; sourceTree = "<group>"; };
+		DF71D7DE26D5136700F49DA1 /* ImportListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,10 @@
 				7D0725D326D240310055C32D /* AppDelegate.swift */,
 				7D0725D526D240310055C32D /* SceneDelegate.swift */,
 				7D0725D726D240310055C32D /* ViewController.swift */,
+				DF71D7DC26D5126300F49DA1 /* DataloggingViewController.swift */,
+				DF71D7DA26D5124900F49DA1 /* PerformanceViewController.swift */,
+				DF71D7DE26D5136700F49DA1 /* ImportListViewController.swift */,
+				DF71D7D826D5123300F49DA1 /* ReportingViewController.swift */,
 				7D0725D926D240310055C32D /* Main.storyboard */,
 				7D0725DC26D240390055C32D /* Assets.xcassets */,
 				7D0725DE26D240390055C32D /* LaunchScreen.storyboard */,
@@ -149,7 +161,11 @@
 				DF71D7D726D29D2300F49DA1 /* CHCSVParser.m in Sources */,
 				7D0725D826D240310055C32D /* ViewController.swift in Sources */,
 				7D0725D426D240310055C32D /* AppDelegate.swift in Sources */,
+				DF71D7DD26D5126300F49DA1 /* DataloggingViewController.swift in Sources */,
 				7D0725D626D240310055C32D /* SceneDelegate.swift in Sources */,
+				DF71D7D926D5123300F49DA1 /* ReportingViewController.swift in Sources */,
+				DF71D7DB26D5124900F49DA1 /* PerformanceViewController.swift in Sources */,
+				DF71D7DF26D5136700F49DA1 /* ImportListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
