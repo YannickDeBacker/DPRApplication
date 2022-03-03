@@ -19,23 +19,35 @@ DPR App Notes
     7. ReportingButton
     8. SetUpButton
 
-3. PreData Logging VC
+3. PreData Logging TableVC -> done
     1. OperationMCButton
     2. StartDataLoggingButton
 
 4. Data logging VC
-    1. CurrentOperationLabel
-    2. CurrentActivityLabel
-    3. StartTimeLabel -> should list end time of last activity
-    4. EditStartTimeLabel -> should be able to edit the StarTime of this activity by means op pop-up for time, with additional pop-up mentioning StopTime of previous Activity will be aligned
-    5. DurationLabel -> continuously counting up
-    6. TakePictureButton -> opensCamera or Gallery
-    7. CommentArea
-    8. MakeCommentButton
-    9. NextActityLogicalButton -> should bring up pop-up with confirmation -> should link to new DataLogging
-    10. NextActivityChoiceButton -> should bring up option menu of possible activities -> should link to new  DataLogging + save info
-    11. OverviewActivityButton -> should open pop-up: option A: continue recording this activity option B: leave and delete activity -> should go to OverviewActivityVC with ChosenOperation = CurrentOperation
-    12. SwitchtoSideListButton -> should go to side -> in case button is pressed, pop-up should open asking: option A: continue recording this activity option B: leave and delete activity
+    1. CurrentOperationLabel DONE
+    2. CurrentActivityLabel DONE
+    3. StartTimeLabel DONE
+	-> should list end time of last activity
+    4. EditStartTimeLabel 
+    	-> should be able to edit the StarTime of this activity by means op pop-up for time, with additional pop-up mentioning StopTime of previous Activity will be aligned
+    6. DurationLabel -> continuously counting up
+    7. TakePictureButton -> opensCamera or Gallery
+    8. CommentArea
+    9. MakeCommentButton
+    10. NextActityLogicalButton DONE
+	-> should bring up pop-up with confirmation NOT DONE
+	-> should link to new DataLogging DONE
+    10. NextActivityChoiceButton DONE
+	-> should bring up option menu of possible activities DONE
+	-> should link to new  DataLogging + save info DONE
+    11. OverviewActivityButton
+	-> should open pop-up: option A: continue recording this activity option B: leave and delete activity 
+	-> should go to OverviewActivityVC with ChosenOperation = CurrentOperation
+    12. SwitchtoSideListButton
+	-> should go to side
+	-> in case button is pressed, pop-up should open asking:
+		option A: continue recording this activity 
+		option B: leave and delete activity
 
 4. PreOverviewActivityVC
     1. OperationMCButton -> chose to be recorded as ChosenOperation
